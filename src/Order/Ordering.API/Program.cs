@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
-using Ordring.Infrastructure.Data;
+using Ordering.Infrastructure.Data;
 
 namespace Ordering.API
 {

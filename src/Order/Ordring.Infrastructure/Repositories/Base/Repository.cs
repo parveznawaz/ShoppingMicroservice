@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Ordering.Core.Entities.Base;
 using Ordering.Core.Repositories.Base;
-using Ordring.Infrastructure.Data;
+using Ordering.Infrastructure.Data;
 
-namespace Ordring.Infrastructure.Repositories.Base
+namespace Ordering.Infrastructure.Repositories.Base
 {
     public class Repository<T>: IRepository<T> where T:Entity
     {

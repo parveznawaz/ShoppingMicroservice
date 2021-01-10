@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Ordering.Core.Entities;
 
-namespace Ordring.Infrastructure.Data
+namespace Ordering.Infrastructure.Data
 {
     public class OrderContext: DbContext
     {

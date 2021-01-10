@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Ordring.Infrastructure.Data;
+using Ordering.Infrastructure.Data;
 
-namespace Ordring.Infrastructure.Migrations
+namespace Ordering.Infrastructure.Migrations
 {
     [DbContext(typeof(OrderContext))]
     [Migration("20210104210301_Initial")]

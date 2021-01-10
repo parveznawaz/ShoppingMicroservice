@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Ordering.Core.Entities;
 using Ordering.Core.Repositories;
-using Ordring.Infrastructure.Data;
-using Ordring.Infrastructure.Repositories.Base;
+using Ordering.Infrastructure.Repositories.Base;
+using Ordering.Infrastructure.Data;
 
-namespace Ordring.Infrastructure.Repositories
+namespace Ordering.Infrastructure.Repositories
 {
     public class OrderRepository: Repository<Order>, IOrderRepository
     {

@@ -39,8 +39,8 @@ namespace Basket.API
                 var configuration = ConfigurationOptions.Parse(Configuration.GetConnectionString("Redis"), true);
                 return ConnectionMultiplexer.Connect(configuration);
             });
-            services.AddTransient<IBasketContext, BasketContext>();
-            services.AddTransient<IBasketRepository, BasketRepository>();
+            services.AddScoped<IBasketContext, BasketContext>();
+            services.AddScoped<IBasketRepository, BasketRepository>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo()

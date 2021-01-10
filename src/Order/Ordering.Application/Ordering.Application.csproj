@@ -16,7 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Ordering.Core\Ordering.Core.csproj" />
-    <ProjectReference Include="..\Ordring.Infrastructure\Ordring.Infrastructure.csproj" />
+    <ProjectReference Include="..\Ordring.Infrastructure\Ordering.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

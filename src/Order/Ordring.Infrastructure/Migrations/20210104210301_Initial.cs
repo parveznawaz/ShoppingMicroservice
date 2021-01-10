@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Ordring.Infrastructure.Migrations
+namespace Ordering.Infrastructure.Migrations
 {
     public partial class Initial : Migration
     {
