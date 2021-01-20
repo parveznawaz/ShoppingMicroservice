@@ -91,3 +91,19 @@ services:
       volumes:
         - ${HOME}/.microsoft/usersecrets/:/root/.microsoft/usersecrets
         - ${HOME}/.aspnet/https:/root/.aspnet/https
+
+    aspnetrunbasics:
+      container_name: aspnetrunbasics
+      environment:
+        - ASPNETCORE_ENVIRONMENT=Development
+        - "ApiSettings:BaseAddress=ocelotapigateway"
+      depends_on:
+        - catalog.api
+        - basket.api
+        - ordering.api
+        - ocelotapigateway
+      volumes:
+        - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+        - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      ports:
+        - "8003:80"
